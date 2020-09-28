@@ -138,7 +138,7 @@ async function addPairs(userArray) {
 
 async function pairUsers(users) {
 	for (let user of users)
-		if (users.except(user).size)
+		if (users.except(user).length)
 			userSet(user, users.except(user));
 	await createGroup(users);
 }
