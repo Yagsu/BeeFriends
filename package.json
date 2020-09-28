@@ -1,0 +1,16 @@
+{
+  "name": "beefriends",
+  "version": "0.4.2",
+  "description": "App for pairing Hive students",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jesse Uuttera 'juuttera'",
+  "license": "ISC",
+  "dependencies": {
+    "@slack/rtm-api": "^5.0.5",
+    "@slack/web-api": "^5.12.0",
+    "esm": "^3.2.25"
+  }
+}
