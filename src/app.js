@@ -71,7 +71,7 @@ async function bfInitialize(event) {
 
 async function bfHelp(event)
 {
-	let message = `[!bf-init] --Initialize the bot on the current channel, bot has to be added to the channel before you can initialize it.\n[!bf-list] --Print the table of currently subscribed users.\nMore functionality might be added on request :)`;
+	let message = `[!bf-init] --Initialize the bot on the current channel, bot has to be added to the channel before you can initialize it.\n[!bf-pair] --Force pair users manually\n[!bf-list] --Print the table of currently subscribed users.\nMore functionality might be added on request :)`;
 	sendMessage(event.channel, message);
 }
 
@@ -142,6 +142,7 @@ async function pairUsers(users) {
 			userSet(user, users.except(user));
 	await createGroup(users);
 }
+
 async function onMessage(event) {
 	if (event.text == '!bf-list')
 		bfPrintList();
@@ -149,6 +150,8 @@ async function onMessage(event) {
 		bfInitialize(event);
 	else if (event.text == '!bf-help')
 		bfHelp(event);
+	else if (event.text == '!bf-pair')
+		bfGetPairs();
 }
 
 async function onReaction(event) {
