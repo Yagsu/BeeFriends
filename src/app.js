@@ -127,6 +127,8 @@ async function addPairs(userArray) {
 		group = [];
 		for (let n = 0; n < GROUP_SIZE; n++)
 		{
+			if (userArray.length == 0)
+				break ;
 			item = getRandomItem(userArray);
 			group.push(item);
 		}
@@ -213,7 +215,7 @@ async function createGroup(users) {
 	{
 		userList += users[i];
 		if (i < users.size - 1)
-			userList += ',';
+			userList += ', ';
 	}
 	group = await web.conversations.open({
 		users: userList
