@@ -12,7 +12,11 @@ node src/index.js
 - Connect the bot to the channel specified in src/values.js and you're good to go.
 
 ### Commands:
-```!bf-list```
-```!bf-init```
 ```!bf-help```
+List commands
+```!bf-init```
+Initialize the bot on the current channel, bot has to be added to the channel before you can initialize it.
 ```!bf-pair```
+Force pair users manually
+```!bf-list``` 
+Print the table of currently subscribed users.
