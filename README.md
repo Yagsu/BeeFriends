@@ -14,9 +14,12 @@ node src/index.js
 ### Commands:
 ```!bf-help```
 List commands
+
 ```!bf-init```
 Initialize the bot on the current channel, bot has to be added to the channel before you can initialize it.
+
 ```!bf-pair```
 Force pair users manually
+
 ```!bf-list``` 
 Print the table of currently subscribed users.
