@@ -95,6 +95,7 @@ async function bfPrintList() {
 
 async function bfGetPairs() {
 	let userArray = Array.from(userMap.keys());
+	beeFriends.openGroups = [];
 
 	if (userArray.length < GROUP_SIZE)
 	{
